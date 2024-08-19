@@ -12,8 +12,10 @@ export default async function PostsPage({ searchParams }) {
   return (
     <div>
       <h1>Posts</h1>
-      <Link href="/posts?sort=asc">Sort ascending</Link>
-      <Link href="/posts?sort=desc">Sort descending</Link>
+      <div className="sort">
+        <Link href="/posts?sort=asc">Sort ascending</Link>
+        <Link href="/posts?sort=desc">Sort descending</Link>
+      </div>
       {posts.map((post) => (
         <div key={post.id}>
           <Link href={`/posts/${post.id}`}>{post.title}</Link>

@@ -1,3 +1,17 @@
 a {
   margin-left: 2rem;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  font-size: 22pt;
+  color: blueviolet;
+}
+.sort {
+  display: flex;
+  background-color: aquamarine;
+  padding: 1rem;
+}
+h1 {
+  text-align: center;
 }
